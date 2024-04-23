@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Charts
 
 struct StepsView: View {
     @State private var steps: [Double] = Array(repeating: 0, count: 7)
@@ -13,8 +14,9 @@ struct StepsView: View {
     
     var body: some View {
         VStack {
+
             ForEach(0..<steps.count, id: \.self) { day in
-                Text("\(formattedDateFor(day: day)): \(steps[day], specifier: "%.0f")")
+                Text("\(formattedDateFor(day: day)): \(Int(steps[day]))")
             }
         }
         .onAppear {

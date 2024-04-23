@@ -12,8 +12,9 @@
 		74082DE72BC7177300BE8A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74082DE62BC7177300BE8A47 /* Assets.xcassets */; };
 		74082DEA2BC7177300BE8A47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74082DE92BC7177300BE8A47 /* Preview Assets.xcassets */; };
 		74082DF22BC730D400BE8A47 /* HealthStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082DF12BC730D400BE8A47 /* HealthStoreService.swift */; };
-		74724EAB2BD73C9400397BDE /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74724EAA2BD73C9400397BDE /* HealthKitSetupAssistant.swift */; };
 		7473DA702BD7FAED003CEEA0 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473DA6F2BD7FAED003CEEA0 /* DateUtility.swift */; };
+		7473DA742BD802AC003CEEA0 /* StepsChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473DA732BD802AC003CEEA0 /* StepsChart.swift */; };
+		7473DA772BD80399003CEEA0 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473DA762BD80399003CEEA0 /* Steps.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		74082DE92BC7177300BE8A47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74082DF02BC7179200BE8A47 /* NomadCount.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NomadCount.entitlements; sourceTree = "<group>"; };
 		74082DF12BC730D400BE8A47 /* HealthStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStoreService.swift; sourceTree = "<group>"; };
-		74724EAA2BD73C9400397BDE /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
 		7473DA6F2BD7FAED003CEEA0 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
+		7473DA732BD802AC003CEEA0 /* StepsChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsChart.swift; sourceTree = "<group>"; };
+		7473DA762BD80399003CEEA0 /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +60,14 @@
 		74082DE12BC7177100BE8A47 /* NomadCount */ = {
 			isa = PBXGroup;
 			children = (
+				7473DA752BD80394003CEEA0 /* Steps */,
+				7473DA722BD80148003CEEA0 /* StepsService */,
+				7473DA712BD80134003CEEA0 /* StepsViews */,
 				7473DA6E2BD7FAE3003CEEA0 /* Helper */,
 				74082DF02BC7179200BE8A47 /* NomadCount.entitlements */,
 				74082DE22BC7177100BE8A47 /* NomadCountApp.swift */,
-				74082DE42BC7177100BE8A47 /* StepsView.swift */,
 				74082DE62BC7177300BE8A47 /* Assets.xcassets */,
 				74082DE82BC7177300BE8A47 /* Preview Content */,
-				74082DF12BC730D400BE8A47 /* HealthStoreService.swift */,
-				74724EAA2BD73C9400397BDE /* HealthKitSetupAssistant.swift */,
 			);
 			path = NomadCount;
 			sourceTree = "<group>";
@@ -84,6 +86,31 @@
 				7473DA6F2BD7FAED003CEEA0 /* DateUtility.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		7473DA712BD80134003CEEA0 /* StepsViews */ = {
+			isa = PBXGroup;
+			children = (
+				74082DE42BC7177100BE8A47 /* StepsView.swift */,
+				7473DA732BD802AC003CEEA0 /* StepsChart.swift */,
+			);
+			path = StepsViews;
+			sourceTree = "<group>";
+		};
+		7473DA722BD80148003CEEA0 /* StepsService */ = {
+			isa = PBXGroup;
+			children = (
+				74082DF12BC730D400BE8A47 /* HealthStoreService.swift */,
+			);
+			path = StepsService;
+			sourceTree = "<group>";
+		};
+		7473DA752BD80394003CEEA0 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				7473DA762BD80399003CEEA0 /* Steps.swift */,
+			);
+			path = Steps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7473DA742BD802AC003CEEA0 /* StepsChart.swift in Sources */,
 				74082DE52BC7177100BE8A47 /* StepsView.swift in Sources */,
 				7473DA702BD7FAED003CEEA0 /* DateUtility.swift in Sources */,
-				74724EAB2BD73C9400397BDE /* HealthKitSetupAssistant.swift in Sources */,
+				7473DA772BD80399003CEEA0 /* Steps.swift in Sources */,
 				74082DE32BC7177100BE8A47 /* NomadCountApp.swift in Sources */,
 				74082DF22BC730D400BE8A47 /* HealthStoreService.swift in Sources */,
 			);
